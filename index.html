@@ -30,24 +30,37 @@
 
   </head>
   <body>
-    <header class="jumbotron bg-inverse text-xs-center center-vertically jumbotron-height" role="banner">
+    <header class="jumbotron bg-inverse text-xs-center center-vertically jumbotron-height" role="banner" style="height: inherit;">
       <div class="container">
         <h1 class="display-3">TimeFit</h1>
         <h2 class="m-b-3">Never be late again<a href="ui-elements.html" class="jumbolink"></a></h2>
-
         <form class= 'form_landing_page' >
-          <div style="overflow:hidden;">
-            <div class="form-group">
-              <label for="">When is going to start?</label>
-                  <div class='form-group'>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div id="datetimepicker12"></div>
-                            <input type='text' id='context_time_stamp' name='context[time-stamp]'/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div>
+          <label for="">What is the event going to start?</label>
+          <div class="container">
+              <div class="row">
+                  <div class='col-md-12'>
+                      <div class="form-group" style="text-align: center; margin: 0 auto; padding: 0 0 3em 0;">
+                          <div class='input-group date' id='datetimepicker12'>
+                              <input type='text' class="form-control" />
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class='form-group'>
+            <label for="">Project ID</label>
+            <select name='document_id'>
+              <option value="26825">Template 1</option>
+              <option value="26826">Template 2</option>
+              <option value="26827">Template 3</option>
+              <option value="26828">Template 4</option>
+              <option value="26829">Template 5</option>
+              <option value="26830">Template 6</option>
+            </select>
           </div>
           <div class='form-group'>
             <label for="">What is the time zone?</label>
@@ -58,11 +71,11 @@
           </div>
         </form>
       </div>
+      <div class="container">
+        <h1 class="text-center padding-1em">Time Keeper</h1>
+        <img class= 'center-image' id="image_id"/>
+      </div>
     </header>
-    <div class="container">
-      <h1 class="text-center padding-1em">Time Keeper</h1>
-      <img class= 'center-image' id="image_id"/>
-    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
