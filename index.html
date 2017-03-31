@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <h1>TimeFit</h1>
+    <form >
+      <div class='form-group'>
+        <label for="">When is going to start?</label>
+        <input type="text" name='context[time-stamp]' class='form-control'>
+      </div>
+      <div class='form-group'>
+        <label for="">What is the time zone?</label>
+        <input type="text" name='context[time-stamp]' class='form-control'>
+      </div>
+      <div class='form-group'>
+        <label for="">Timezone</label>
+        <select id='timeZoneList'></select>
+      </div>
+      <div class='form-group'>
+        <button class='btn btn-success' id='generate'>Generate</button>
+      </div>
+    </form>
+      <img id="image_id"/>
+      <img id="image_id2"/>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="./moment.js"></script>
+    <script src="./moment-timezone.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
