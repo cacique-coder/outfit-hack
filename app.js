@@ -33,4 +33,8 @@ $(function(){
   Communication.initialize();
   Forms.initialize();
   document.querySelector('#generate').addEventListener("click", Forms.generate);
+  $('#datetimepicker12').datetimepicker({ inline: true, sideBySide: true });
+  $('#datetimepicker12').on('dp.change', function(e){
+    document.querySelector("#context_time_stamp").value = e.date.toISOString();
+  })
 })

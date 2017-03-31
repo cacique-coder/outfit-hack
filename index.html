@@ -4,35 +4,43 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" crossorigin="anonymous">
 
   </head>
   <body>
     <h1>TimeFit</h1>
     <form >
-      <div class='form-group'>
-        <label for="">When is going to start?</label>
-        <input type="text" name='context[time-stamp]' class='form-control'>
+      <div style="overflow:hidden;">
+        <div class="form-group">
+          <label for="">When is going to start?</label>
+              <div class='form-group'>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="datetimepicker12"></div>
+                        <input type='text' id='context_time_stamp' name='context[time-stamp]'/>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
       <div class='form-group'>
         <label for="">What is the time zone?</label>
-        <input type="text" name='context[time-stamp]' class='form-control'>
-      </div>
-      <div class='form-group'>
-        <label for="">Timezone</label>
-        <select id='timeZoneList'></select>
+        <select id='timeZoneList' name='context[time-zone]'></select>
       </div>
       <div class='form-group'>
         <button class='btn btn-success' id='generate'>Generate</button>
       </div>
     </form>
-      <img id="image_id"/>
-      <img id="image_id2"/>
+    <img id="image_id"/>
+
     <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
     <script src="./moment.js"></script>
     <script src="./moment-timezone.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
   </body>
 </html>
