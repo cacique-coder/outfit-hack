@@ -5,34 +5,64 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#663fb5">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#663fb5">
+    <link rel="stylesheet" href="css/landio.css">
+
   </head>
   <body>
-    <h1>TimeFit</h1>
-    <form >
-      <div class='form-group'>
-        <label for="">When is going to start?</label>
-        <input type="text" name='context[time-stamp]' class='form-control'>
+
+    <header class="jumbotron bg-inverse text-xs-center center-vertically jumbotron-height" role="banner">
+      <div class="container">
+        <h1 class="display-3">TimeFit</h1>
+        <h2 class="m-b-3">Never be late again<a href="ui-elements.html" class="jumbolink"></a></h2>
+
+        <form class= 'form_landing_page'>
+          <div class='form-group'>
+            <label for="">When is going to start?</label>
+            <input type="text" name='context[time-stamp]' class='form-control form-control-lg'>
+          </div>
+
+          <div class='form-group'>
+            <label for="">What is the time zone?</label>
+            <input type="text" name='context[time-stamp]' class='form-control form-control-lg'>
+          </div>
+
+          <div class='form-group'>
+            <label for="">Timezone</label>
+            <select id='timeZoneList'></select>
+          </div>
+          <div class='form-group'>
+            <button class='btn btn-success' id='generate'>Generate</button>
+          </div>
+        </form>
       </div>
-      <div class='form-group'>
-        <label for="">What is the time zone?</label>
-        <input type="text" name='context[time-stamp]' class='form-control'>
-      </div>
-      <div class='form-group'>
-        <label for="">Timezone</label>
-        <select id='timeZoneList'></select>
-      </div>
-      <div class='form-group'>
-        <button class='btn btn-success' id='generate'>Generate</button>
-      </div>
-    </form>
-      <img id="image_id"/>
-      <img id="image_id2"/>
+    </header>
+
     <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="./moment.js"></script>
-    <script src="./moment-timezone.js"></script>
-    <script src="./app.js"></script>
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+        <script src="./moment.js"></script>
+        <script src="./moment-timezone.js"></script>
+        <script src="./app.js"></script>
   </body>
 </html>
