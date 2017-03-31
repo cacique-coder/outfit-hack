@@ -12,9 +12,11 @@ var Communication = {
 
   send : function(arguments){
     window.url = "http://timefit.outfit.io/projects/2790/selections/78997/dynamic_export"+
-              "?&document_id=26812&access_token=U1WqGTJDHE4q8MsGSj54S8Bw&" +arguments;
-
+              "?access_token=U1WqGTJDHE4q8MsGSj54S8Bw&" +arguments;
+    var image   
     $('#image_id').attr('src', url)
+    document.querySelector('p').innerText  = document.querySelector('img').outerHTML
+    
   }
 };
 
@@ -26,6 +28,7 @@ var Forms = {
   generate : function(e){
     e.preventDefault();
     Communication.send(unescape($('form').serialize()));
+
   }
 }
 
